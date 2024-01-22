@@ -1,0 +1,159 @@
+body{
+    background-color:#dbdde0;
+    margin:0;
+    padding:0;
+    text-align:center;
+    width: 100vw;
+}
+
+
+
+/*Front*/
+
+#heroes{
+    height: 100vh;
+    margin:0;
+    padding:0;
+}
+
+.front{
+    display:grid;
+    grid-template: 35vh 15vh 15vh 35vh / repeat(15, 1fr);
+    gap:0;
+}
+
+.laptop{
+    object-fit: contain;
+    height: 100vh;
+    grid-area: 1 / 1 / 4 / 3;
+}
+
+.name{
+    text-align:center;
+    padding-top:100px;
+    padding-left: 0;
+    width: 100%;
+    font-weight: 100;
+    grid-area: 1 / 8 / 2 / 16;
+}
+
+.heading{
+    font-family: 'Yellowtail', cursive;
+    font-size:220px;
+    font-weight:100;
+    margin: 0;
+    padding-top:0px;
+}
+
+.text{
+    font-family: 'open sans', sans-serif;
+    font-size:75px;
+    padding:0;
+    margin:0;
+    font-weight: 500;
+}
+
+.profile{
+    grid-area: 4 / 6 / 5 / 16;
+    display: grid;
+    grid-template: 100% / 400px 900px;
+    text-align: center;
+}
+
+.frame{
+    border-radius:50%;
+    border: 5px solid black;
+    height: 360px;
+    width: 360px;
+}
+
+.mypic{
+    object-fit: contain;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+}
+
+.description{
+    padding-top:50px;
+}
+
+.description > p{
+    font-family: 'open sans', sans-serif;
+    font-size: 50px;
+    padding:0;
+    margin: 0;
+}
+
+/*front-section-end*/
+
+
+
+
+
+
+/*Skills section*/
+#skills{
+    text-align: center;
+    margin-top: 50px;
+}
+.cent{
+    display: flex;
+    justify-content: center;
+}
+.skill-container{
+    display: grid;
+    grid-template: repeat(2, 270px) / repeat(5, 270px);
+    text-align: center;
+    font-family: 'open-sans', sans-serif;
+    gap:50px;
+}
+
+.skill-container img{
+    width: 150px;
+    height: 150px;
+}
+
+.skill-container p {
+    font-size: 50px;
+}
+
+/*About Me*/
+#about{
+    text-align:center;
+    padding-top:100px;
+}
+
+#about > p {
+    font-size:50px;
+    font-family: 'open sans', sans-serif;
+    padding:50px;
+    text-align:justify;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+/*about me ends*/
+
+/*contact me starts*/
+#contact > p{
+    font-size:50px;
+    font-family: 'open sans', sans-serif;
+    padding:50px;
+    padding-bottom: 10px;
+    text-align:justify;
+}
+
+.button{
+    border:none;
+    height:2.5rem;
+    width: 15rem;
+    color:white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+    font-size:30px;
+}
