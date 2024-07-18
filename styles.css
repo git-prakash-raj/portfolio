@@ -242,9 +242,30 @@ section {
   justify-content: flex-start;
   gap: 100px;
   margin: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px 0px;
 }
+
 .clg-logo {
   fill: white;
   width: 100px;
   height: 100px;
+}
+
+/* Projects */
+
+.project-card {
+  width: 300px;
+  height: 300px;
+}
+
+.project-card > img {
+  display: none;
+}
+
+.project-card > p {
+  margin: 0px;
+  text-align: center;
+  z-index: 1;
 }
