@@ -257,11 +257,16 @@ section {
 
 .project-card {
   width: 300px;
-  height: 300px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
 
 .project-card > img {
-  display: none;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 10px 50px;
 }
 
 .project-card > p {
