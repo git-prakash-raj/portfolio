@@ -3,6 +3,8 @@
   --primaryFont: #fffffe;
   --secondaryFont: #38b6ff;
   --light: #f1f2f4;
+  --dark: #16161a;
+  --transparentBackground: rgba(255, 255, 255, 0.1);
 }
 
 @font-face {
@@ -15,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--primaryFont);
   font-family: Futura;
 }
 
@@ -32,6 +34,7 @@ section {
 /* Nav-bar */
 #nav-bar {
   border: 2px solid #545454;
+  background-color: var(--transparentBackground);
   border-radius: 15px;
   display: flex;
   justify-content: space-evenly;
@@ -82,7 +85,7 @@ section {
 .type-effect {
   display: inline-block;
   width: 100%;
-  border-right: 3px solid white;
+  border-right: 3px solid var(--primaryFont);
   padding: 0px;
   font-size: 45px;
   white-space: nowrap;
@@ -127,7 +130,7 @@ section {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transition: all 1s ease-in-out;
-  border: 2px solid whitesmoke;
+  border: 2px solid var(--primaryFont) smoke;
 }
 
 @keyframes blob-motion {
@@ -150,8 +153,9 @@ section {
   margin-top: 10px;
 }
 .icons {
-  width: 4brav0px;
+  width: 40px;
   height: 40px;
+  border-radius: 5px;
 }
 
 /* About section */
@@ -186,7 +190,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--transparentBackground);
   border-radius: 10px;
 }
 
@@ -203,24 +207,24 @@ section {
 
 @keyframes toolHover {
   0% {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--primaryFont);
   }
 
   30% {
-    border-top: 1px solid white;
-    border-right: 1px solid white;
+    border-top: 1px solid var(--primaryFont);
+    border-right: 1px solid var(--primaryFont);
   }
 
   60% {
-    border-top: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid var(--primaryFont);
+    border-right: 1px solid var(--primaryFont);
+    border-bottom: 1px solid var(--primaryFont);
   }
 
   100% {
     transform: scale(1.2);
     box-shadow: -2px 2px 20px 5px rgba(255, 255, 255, 0.2);
-    border: 1px solid white;
+    border: 1px solid var(--primaryFont);
   }
 }
 
@@ -230,7 +234,7 @@ section {
 }
 
 .nodeJS {
-  background-color: white;
+  background-color: var(--primaryFont);
   border-radius: 5px;
 }
 /* Education */
@@ -242,13 +246,13 @@ section {
   justify-content: flex-start;
   gap: 100px;
   margin: 5%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--transparentBackground);
   border-radius: 10px;
   padding: 20px 0px;
 }
 
 .clg-logo {
-  fill: white;
+  fill: var(--primaryFont);
   width: 100px;
   height: 100px;
 }
@@ -257,9 +261,10 @@ section {
 
 .project-card {
   width: 300px;
-  height: 350px;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  padding: 10px;
 }
 
 .project-card > img {
@@ -273,4 +278,25 @@ section {
   margin: 0px;
   text-align: center;
   z-index: 1;
+}
+
+.small-font {
+  font-size: 20px;
+}
+
+.project-card > .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: var(--secondaryFont);
+  width: 100px;
+  height: 32px;
+  border: none;
+  color: #fffffe;
+  font-size: 16px;
+  border-radius: 4px;
 }
