@@ -1,5 +1,7 @@
 :root {
   --theme: #16161a;
+  --whiteFont: #fffffe;
+  --blackFont: #000001;
   --primaryFont: #fffffe;
   --secondaryFont: #38b6ff;
   --light: #f1f2f4;
