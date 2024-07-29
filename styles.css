@@ -7,6 +7,8 @@
   --light: #f1f2f4;
   --dark: #16161a;
   --transparentBackground: rgba(255, 255, 255, 0.1);
+  --lightTransparent: rgba(255, 255, 255, 0.1);
+  --darkTransparent: rgba(0, 0, 0, 0.1);
 }
 
 @font-face {
@@ -70,6 +72,11 @@ section {
   color: var(--secondaryFont);
   margin-right: 40px;
 }
+
+#toggle {
+  width: 32px;
+  height: 32px;
+}
 /* typing */
 #typing-container {
   display: flex;
@@ -132,7 +139,7 @@ section {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transition: all 1s ease-in-out;
-  border: 2px solid var(--primaryFont) smoke;
+  border: 2px solid var(--primaryFont);
 }
 
 @keyframes blob-motion {
@@ -236,7 +243,7 @@ section {
 }
 
 .nodeJS {
-  background-color: var(--primaryFont);
+  background-color: #fffffe;
   border-radius: 5px;
 }
 /* Education */
@@ -264,7 +271,7 @@ section {
 .project-card {
   width: 300px;
   height: 400px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--transparentBackground);
   border-radius: 10px;
   padding: 10px;
 }
