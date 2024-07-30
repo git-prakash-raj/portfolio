@@ -1,0 +1,67 @@
+@media (min-width: 800px) and (max-width: 1000px) {
+  .links {
+    font-size: 28px;
+  }
+  #blob {
+    height: 336px;
+    width: 280px;
+  }
+  .headings {
+    font-size: 32px;
+  }
+  .content {
+    font-size: 24px;
+    margin: 10px;
+  }
+  .center {
+    width: 800px;
+  }
+  #home {
+    justify-content: center;
+  }
+  #name {
+    font-size: 68px;
+  }
+  #role,
+  #type-effect {
+    font-size: 32px;
+  }
+  .greeting {
+    font-size: 24px;
+  }
+  .icons {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tool {
+    width: 160px;
+    height: 60px;
+    gap: 10px;
+  }
+
+  .college {
+    gap: 50px;
+  }
+
+  .body-font {
+    font-size: 20px;
+  }
+
+  .project-card {
+    width: 270px;
+    height: 360px;
+  }
+
+  .project-card > img {
+    width: 150px;
+    width: 150px;
+  }
+  .small-font {
+    font-size: 16px;
+  }
+  .button {
+    width: 80px;
+    height: 24px;
+  }
+}
