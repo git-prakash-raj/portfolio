@@ -9,6 +9,9 @@
   --transparentBackground: rgba(255, 255, 255, 0.1);
   --lightTransparent: rgba(255, 255, 255, 0.1);
   --darkTransparent: rgba(0, 0, 0, 0.1);
+  --shadow: rgba(255, 255, 255, 0.2);
+  --lightShadow: rgba(255, 255, 255, 0.2);
+  --darkShadow: rgba(0, 0, 0, 0.1);
 }
 
 @font-face {
@@ -50,6 +53,11 @@ section {
   text-decoration: none;
   color: var(--primaryFont);
   font-size: 32px;
+}
+
+#mode {
+  width: 32px;
+  height: 32px;
 }
 
 /* Home */
@@ -156,7 +164,7 @@ section {
 
 .socials {
   display: flex;
-  width: 80px;
+  width: 100px;
   justify-content: flex-start;
   gap: 20px;
   margin-top: 10px;
@@ -232,7 +240,7 @@ section {
 
   100% {
     transform: scale(1.2);
-    box-shadow: -2px 2px 20px 5px rgba(255, 255, 255, 0.2);
+    box-shadow: -2px 2px 20px 5px var(--shadow);
     border: 1px solid var(--primaryFont);
   }
 }

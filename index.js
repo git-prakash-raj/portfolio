@@ -25,13 +25,17 @@ document.querySelector("#mode").addEventListener("click", () => {
     "./images/icons/linkedin-light-com.svg",
     "./images/icons/linkedin-dark-com.svg",
   ];
+  const shadow = [
+    rootValue.getPropertyValue("--darkShadow"),
+    rootValue.getPropertyValue("--lightShadow"),
+  ];
   const modeIcon = ["./images/icons/moonImg.svg", "./images/icons/sunImg.svg"];
   current = (current + 1) % 2;
   root.style.setProperty("--theme", theme[current]);
   root.style.setProperty("--primaryFont", font[current]);
   root.style.setProperty("--transparentBackground", trans[current]);
+  root.style.setProperty("--shadow", shadow[current]);
   document.querySelector("#git-hub").src = git[current];
   document.querySelector("#linked-in").src = linked[current];
   document.querySelector("#toggle").src = modeIcon[current];
-  console.log(document.querySelector("#toggle").src);
 });
