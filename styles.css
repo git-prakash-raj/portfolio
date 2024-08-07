@@ -64,6 +64,20 @@ section {
   transition: all 1s ease-in-out;
 }
 
+.rotate {
+  animation: rotateOut 0.5s ease-in-out;
+}
+
+@keyframes rotateOut {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Home */
 #home {
   display: flex;
@@ -71,7 +85,6 @@ section {
   align-items: center;
   width: 100%;
   margin: 100px 0px;
-  transition: all 1s ease-in-out;
 }
 
 .greeting {

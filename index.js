@@ -37,5 +37,13 @@ document.querySelector("#mode").addEventListener("click", () => {
   root.style.setProperty("--shadow", shadow[current]);
   document.querySelector("#git-hub").src = git[current];
   document.querySelector("#linked-in").src = linked[current];
-  document.querySelector("#toggle").src = modeIcon[current];
+  setTimeout(() => {
+    const imgElement = document.querySelector("#toggle");
+    imgElement.classList.remove("rotate");
+
+    void imgElement.offsetWidth;
+    imgElement.src = modeIcon[current];
+    imgElement.classList.add("rotate");
+  }),
+    500;
 });
